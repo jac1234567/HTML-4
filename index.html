@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podio de Competencia</title>
+    <!-- Vincular Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Vincular archivo CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Ganadores de la Competencia</h2>
+
+        <!-- Formulario para ingresar los datos del ganador -->
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form id="form-competencia">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="apellido" class="form-label">Apellido:</label>
+                        <input type="text" class="form-control" id="apellido" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="edad" class="form-label">Edad:</label>
+                        <input type="number" class="form-control" id="edad" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="pais" class="form-label">País:</label>
+                        <input type="text" class="form-control" id="pais" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="posicion" class="form-label">Posición:</label>
+                        <input type="number" class="form-control" id="posicion" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sección de Resultados (Podio) -->
+        <div class="row mt-4 justify-content-center" id="resultados" style="display: none;">
+            <!-- Segundo puesto -->
+            <div class="col-md-4">
+                <div class="card podio-segundo" id="segundo-puesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Segundo Puesto</h5>
+                        <p id="segundo-info"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Primer puesto -->
+            <div class="col-md-4">
+                <div class="card podio-primero" id="primer-puesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Primer Puesto</h5>
+                        <p id="primer-info"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercer puesto -->
+            <div class="col-md-4">
+                <div class="card podio-tercero" id="tercer-puesto">
+                    <div class="card-body">
+                        <h5 class="card-title">Tercer Puesto</h5>
+                        <p id="tercer-info"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Vincular archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* Contenedor del podio */
+#resultados {
+    display: flex; /* Activa flexbox */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    align-items: flex-end; /* Alinea las tarjetas al fondo */
+    gap: 10px; /* Espaciado entre las tarjetas */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilo base para todas las tarjetas */
+.card {
+    text-align: center;
+    color: black;
+    height: 200px;
+    border-radius: 10px;
+    display: none; /* Ocultar inicialmente */
+}
+
+/* Podio - Primer Puesto */
+.podio-primero {
+    background-color: gold;
+    font-size: 1.5rem;
+    height: 250px; /* Altura mayor para el primer puesto */
+}
+
+/* Podio - Segundo Puesto */
+.podio-segundo {
+    background-color: silver;
+    font-size: 1.3rem;
+    height: 200px; /* Altura menor */
+}
+
+/* Podio - Tercer Puesto */
+.podio-tercero {
+    background-color: #cd7f32;
+    font-size: 1.2rem;
+    height: 175px; /* Altura menor */
+}
